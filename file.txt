@@ -1,2 +1,2 @@
-line 1
+line A changed 
 line 2
