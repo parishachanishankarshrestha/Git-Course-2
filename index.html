@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Page</title>
+    <style>
+        .profile-img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 18px;
+            border: 3px solid #8fa4e1;
+            box-shadow: 0 2px 8px rgba(44, 62, 80, 0.10);
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 22px;
+            padding: 10px 28px;
+            background: linear-gradient(90deg, #8fa4e1 0%, #232526 100%);
+            color: #fff;
+            border: none;
+            border-radius: 24px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0 2px 8px rgba(44, 62, 80, 0.10);
+        }
+        .btn:hover {
+            background: linear-gradient(90deg, #232526 0%, #8fa4e1 100%);
+            transform: translateY(-2px) scale(1.04);
+        }
+        ul.fun-facts {
+            list-style: none;
+            padding: 0;
+            margin: 24px 0 0 0;
+            color: #414345;
+            font-size: 1rem;
+        }
+        ul.fun-facts li {
+            margin-bottom: 8px;
+            padding-left: 18px;
+            position: relative;
+        }
+        ul.fun-facts li::before {
+            content: "★ ";
+            color: #8fa4e1;
+            position: absolute;
+            left: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: purple;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card {
+            background: #f4f6fa;
+            padding: 40px 32px 32px 32px;
+            border-radius: 18px;
+            box-shadow: 0 6px 32px rgba(44, 62, 80, 0.25);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            color: #8fa4e1;
+            margin-bottom: 18px;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+        }
+        p {
+            color:black;
+            font-size: 1.1rem;
+            margin-bottom: 0;
+        }
+        @media (max-width: 500px) {
+            .card {
+                padding: 24px 8px;
+            }
+            h1 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img class="profile-img" src="https://api.dicebear.com/7.x/bottts/svg?seed=creative" alt="Cartoon Avatar">
+        <h1>Welcome to My Creative Page</h1>
+        <p>This is a simple HTML file, now with a creative twist!</p>
+        <button class="btn" onclick="alert('Thanks for visiting!')">Say Hello</button>
+        <ul class="fun-facts">
+            <li>I love coding and design.</li>
+            <li>Coffee fuels my creativity.</li>
+            <li>Always learning something new!</li>
+        </ul>
+    </div>
+</body>
+</html>
